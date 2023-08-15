@@ -1,10 +1,10 @@
 const express = require("express")
-const path = require("path")
-const { writeFile, readFile } = require("fs")
+
+
 const {v4 : uuidv4} = require("uuid") //generates unique ids
-const notes = require("./Develop/db/db.json")
-const apiRoutes = require("./Develop/routes/apiRoutes")
-const htmlRoutes = require("./Develop/routes/htmlRoutes")
+const notes = require("./db/db.json")
+const apiRoutes = require("./routes/apiRoutes")
+const htmlRoutes = require("./routes/htmlRoutes")
 
 const PORT = process.env.PORT || 3000
 
